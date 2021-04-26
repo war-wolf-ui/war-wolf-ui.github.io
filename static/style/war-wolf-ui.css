@@ -1,0 +1,46 @@
+.wl-btns{display: inline-block;border:none;outline: none;}
+.wl-btns.primary{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;
+    padding-right:15px;background: #5281ff;color:#fff;font-size: 14px;border-radius: 3px;}
+.wl-btns.primary:hover{background: #2569ff;}
+
+
+.wl-btns.default{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;border: solid 1px #c6c9d3;
+    padding-right:15px;background: #eceff4;color:#333;font-size: 14px;border-radius: 3px;box-sizing: border-box}
+.wl-btns.default:hover{background: #ced1d5;}
+
+
+
+
+
+
+
+
+
+
+
+.wl-btns.primary.is-disabled{cursor: no-drop;
+    background: #a0cfff}
+.wl-btns.primary.is-disabled:hover{background: #a0cfff;}
+.wl-btns.default.is-disabled{cursor: no-drop;background: #eceff4;color:#c0c4cc;border: solid 1px #c6c9d3;}
+.wl-btns.default.is-disabled:hover{background: #eceff4;}
+
+.wl-btns.text{height: 32px;width: auto;line-height: 30px;cursor:pointer;border: none;
+    background: none;color:#409eff;font-size: 14px;}
+.wl-btns.text:hover{background:none;color: #2f81ff;}
+.wl-btns.text.is-disabled{color:#c0c4cc;cursor: no-drop;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
