@@ -1,11 +1,11 @@
 .wl-btns{display: inline-block;border:none;outline: none;}
 .wl-btns.primary{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;
-    padding-right:15px;background: #5281ff;color:#fff;font-size: 14px;border-radius: 3px;}
+    padding-right:15px;background: #5281ff;color:#fff;font-size: 14px;border-radius: 3px;box-sizing: border-box;}
 .wl-btns.primary:hover{background: #2569ff;}
 
 
 .wl-btns.default{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;border: solid 1px #c6c9d3;
-    padding-right:15px;background: #eceff4;color:#333;font-size: 14px;border-radius: 3px;box-sizing: border-box}
+    padding-right:15px;background: #eceff4;color:#333;font-size: 14px;border-radius: 3px;box-sizing: border-box;}
 .wl-btns.default:hover{background: #ced1d5;}
 
 
@@ -18,25 +18,177 @@
 
 
 
-.wl-btns.primary.is-disabled{cursor: no-drop;
-    background: #a0cfff}
-.wl-btns.primary.is-disabled:hover{background: #a0cfff;}
-.wl-btns.default.is-disabled{cursor: no-drop;background: #eceff4;color:#c0c4cc;border: solid 1px #c6c9d3;}
-.wl-btns.default.is-disabled:hover{background: #eceff4;}
+
+
+
+.wl-btns.warning{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;border: solid 1px #eea40a;
+    padding-right:15px;background: #eea40a;color:#fff;font-size: 14px;border-radius: 3px;box-sizing: border-box}
+.wl-btns.warning:hover{background: #ee8d0b;}
+
+
+.wl-btns.danger{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;border: solid 1px #e91212;
+    padding-right:15px;background: #e91212;color:#fff;font-size: 14px;border-radius: 3px;box-sizing: border-box}
+.wl-btns.danger:hover{background: #ca0625;}
+
+
 
 .wl-btns.text{height: 32px;width: auto;line-height: 30px;cursor:pointer;border: none;
     background: none;color:#409eff;font-size: 14px;}
 .wl-btns.text:hover{background:none;color: #2f81ff;}
+
+
+/*is-plain*/
+.wl-btns.default.is-plain{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;border: solid 1px #d8d8d8;
+    padding-right:15px;background: none;color:#666;font-size: 14px;border-radius: 3px;box-sizing: border-box}
+.wl-btns.default.is-plain:hover{background: #ced1d5;}
+
+.wl-btns.primary.is-plain{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;box-sizing: border-box;
+    padding-right:15px;background: #ecf5ff;color:#409eff;font-size: 14px;border-radius: 3px;border:1px solid #b3d8ff;}
+.wl-btns.primary.is-plain:hover{background: #2569ff;color:#fff;border:1px solid #2569ff;}
+.wl-btns.warning.is-plain{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;box-sizing: border-box;
+    padding-right:15px;background: #fdf6ec;color:#e6a23c;font-size: 14px;border-radius: 3px;border:1px solid #f5dab1;}
+.wl-btns.warning.is-plain:hover{background: #ee8d0b;color:#fff;border:1px solid #eea40a;}
+.wl-btns.danger.is-plain{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;border: solid 1px #fbc4c4;
+    padding-right:15px;background: #fef0f0;color:#f56c6c;font-size: 14px;border-radius: 3px;box-sizing: border-box}
+.wl-btns.danger.is-plain:hover{background: #ca0625;color:#fff;}
+
+/*is-round*/
+.wl-btns.default.is-round{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;border: solid 1px #d8d8d8;
+    padding-right:15px;background: none;color:#666;font-size: 14px;border-radius: 16px;box-sizing: border-box;}
+.wl-btns.default.is-round:hover{background: #ced1d5;}
+
+.wl-btns.primary.is-round{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;box-sizing: border-box;
+    padding-right:15px;background: #ecf5ff;color:#409eff;font-size: 14px;border-radius: 16px;border:1px solid #b3d8ff;}
+.wl-btns.primary.is-round:hover{background: #2569ff;color:#fff;border:1px solid #2569ff;}
+.wl-btns.warning.is-round{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;box-sizing: border-box;
+    padding-right:15px;background: #fdf6ec;color:#e6a23c;font-size: 14px;border-radius: 16px;border:1px solid #f5dab1;}
+.wl-btns.warning.is-round:hover{background: #ee8d0b;color:#fff;border:1px solid #eea40a;}
+.wl-btns.danger.is-round{height: 32px;width: auto;line-height: 30px;padding-left:15px;cursor:pointer;border: solid 1px #fbc4c4;
+    padding-right:15px;background: #fef0f0;color:#f56c6c;font-size: 14px;border-radius: 16px;box-sizing: border-box}
+.wl-btns.danger.is-round:hover{background: #ca0625;color:#fff;}
+
+
+/*is-circle*/
+.wl-btns.default.is-circle{height: 32px;width:32px;line-height: 30px;padding-left:0px;cursor:pointer;border: solid 1px #d8d8d8;
+    padding-right:0px;background: none;color:#666;font-size: 14px;border-radius: 50%;box-sizing: border-box;}
+.wl-btns.default.is-circle:hover{background: #ced1d5;}
+
+.wl-btns.primary.is-circle{height: 32px;width: 32px;line-height: 30px;padding-left:0px;cursor:pointer;box-sizing: border-box;
+    padding-right:0px;background: #ecf5ff;color:#409eff;font-size: 14px;border-radius: 50%;border:1px solid #b3d8ff;}
+.wl-btns.primary.is-circle:hover{background: #2569ff;color:#fff;border:1px solid #2569ff;}
+
+.wl-btns.warning.is-circle{height: 32px;width: 32px;line-height: 30px;padding-left:0px;cursor:pointer;box-sizing: border-box;
+    padding-right:0px;background: #fdf6ec;color:#e6a23c;font-size: 14px;border-radius: 50%;border:1px solid #f5dab1;}
+.wl-btns.warning.is-circle:hover{background: #ee8d0b;color:#fff;border:1px solid #eea40a;}
+
+.wl-btns.danger.is-circle{height: 32px;width: 32px;line-height: 30px;padding-left:0px;cursor:pointer;border: solid 1px #fbc4c4;
+    padding-right:0px;background: #fef0f0;color:#f56c6c;font-size: 14px;border-radius: 50%;box-sizing: border-box}
+.wl-btns.danger.is-circle:hover{background: #ca0625;color:#fff;}
+
+/*禁用状态*/
+.wl-btns.danger.is-disabled{cursor: no-drop;background: #fab6b6;color:#fff;border: solid 1px #fab6b6;}
+.wl-btns.danger.is-disabled:hover{cursor: no-drop;background: #fab6b6;color:#fff;border: solid 1px #fab6b6;}
+
+.wl-btns.primary.is-disabled{cursor: no-drop;background: #a0cfff}
+.wl-btns.primary.is-disabled:hover{background: #a0cfff;}
+
+.wl-btns.default.is-disabled{cursor: no-drop;background: #eceff4;color:#c0c4cc;border: solid 1px #c6c9d3;}
+.wl-btns.default.is-disabled:hover{background: #eceff4;}
+.wl-btns.warning.is-disabled{cursor: no-drop;background: #f3d19e;color:#fff;border: solid 1px #f3d19e;}
+.wl-btns.warning.is-disabled:hover{cursor: no-drop;background: #f3d19e;color:#fff;border: solid 1px #f3d19e;}
 .wl-btns.text.is-disabled{color:#c0c4cc;cursor: no-drop;}
 
 
 
 
+/*朴素时的禁用*/
+.wl-btns.default.is-disabled.is-plain{cursor: no-drop;background: #fff;color:#c0c4cc;border:1px solid #ebeef5;}
+.wl-btns.primary.is-disabled.is-plain{cursor: no-drop;background: #ecf5ff;color:#8cc5ff;border:1px solid #d9ecff;}
+.wl-btns.warning.is-disabled.is-plain{cursor: no-drop;background: #fdf6ec;color:#f0c78a;border: solid 1px #faecd8;}
+.wl-btns.danger.is-disabled.is-plain{cursor: no-drop;background: #fef0f0;color:#f9a7a7;border: solid 1px #fde2e2;}
 
 
+/*图标*/
+.wl-btns i{font-size: 14px;}
 
-
-
+/*定制化按钮*/
+.wl-btns.custom1{height: 46px;background: #303030;padding-left: 20px;padding-right: 20px;color: #fff;font-size: 16px;
+    line-height: 46px;margin-right: 10px;display: inline-block;cursor: pointer;}
+.wl-btns.custom1:hover{background: #161515;}
+.wl-btns.custom2{height: 46px;
+    background: #e91112;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 46px;
+    margin-right: 10px;display: inline-block;
+    cursor: pointer;}
+.wl-btns.custom2:hover{background: #c70909;}
+.wl-btns.custom3{height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 32px;color: #e91112;
+    margin-right: 10px;
+    border: 1px solid #e91112;background: none;
+    cursor: pointer;}
+.wl-btns.custom4{height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;background: none;
+    color: #717171;display: inline-block;
+    border: 1px solid #717171;
+    line-height: 32px;
+    cursor: pointer;}
+.wl-btns.custom5{
+    height: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;display: inline-block;cursor: pointer;
+    background: #303030;}
+.wl-btns.custom6{
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #d8d8d8;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;display: inline-block;
+    color: #666;cursor: pointer;
+    background: none;
+    outline: none;}
+.wl-btns.custom7{
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333;
+    font-size: 16px;
+    line-height: 40px;cursor: pointer;background: none;display: inline-block;
+    border: 1px solid #e91112;}
+.wl-btns.custom8{
+    height: 46px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #999;
+    font-size: 18px;
+    line-height: 46px;
+    border: 1px solid #dbdbdb;display: inline-block;cursor: pointer;
+    background: #f4f4f4;}
+.wl-btns.custom9{
+    height: 46px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 46px;
+    margin-right: 10px;
+    -webkit-box-sizing: border-box;cursor: pointer;
+    box-sizing: border-box;
+    background: #666;}
 
 
 
